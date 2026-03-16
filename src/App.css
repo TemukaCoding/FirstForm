@@ -12,8 +12,7 @@ body {
 .contact-form h2 {
   font-size: 32px;
   font-weight: 800;
-  color: #2d6a56;
-  margin-bottom: 24px;
+  color: #3D8D7A;
   font-family: 'Manrope', sans-serif;
 }
 
@@ -61,11 +60,11 @@ body {
   gap: 8px;
   font-size: 13px;
   margin-bottom: 18px;
-  color: #444;
+  color: #6B6B6B;
 }
 
 .terms a {
-  color: #2d6a56;
+  color: #6B6B6B;
   text-decoration: underline;
 }
 

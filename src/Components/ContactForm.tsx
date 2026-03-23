@@ -1,6 +1,7 @@
 import { useState } from "react"
 import SendIcon from "../assets/Group 1.png"
 
+
 export default function ContactForm() {
 
   const [formData, setFormData] = useState({
@@ -16,9 +17,10 @@ export default function ContactForm() {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) {
     const { name, value, type } = e.target
-
+  
     if (type === "checkbox") {
       const checked = (e.target as HTMLInputElement).checked
+      console.log(checked)
       setFormData({ ...formData, [name]: checked })
     } else {
       setFormData({ ...formData, [name]: value })
@@ -28,6 +30,7 @@ export default function ContactForm() {
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     console.log("Form submitted:", formData)
+    alert("Message sent successfully!")
   }
 
   return (

@@ -173,6 +173,14 @@ body {
 .social-icons {
   display: flex;
   gap: 10px;
+  align-items: end;
+}
+
+.social-icons .icon {
+  width: 60px;        
+  height: 70px;
+  opacity: 1.5;
+  margin-left: auto;  
 }
 
 .social-icons img {
@@ -184,15 +192,12 @@ body {
   filter: invert(0.8);
 }
 
-.icon {
-  width: 80px;
-  height: 90px;
-  position: absolute;
-  bottom: 24px;
-  right: 28px;
-  opacity: 0.3;
-}
 .info-item {
   text-decoration: none;
   color: #EEEEEE;
+}
+
+.map {
+  width: 420px;
+  height: 100%;
 }

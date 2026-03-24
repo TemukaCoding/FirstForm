@@ -1,5 +1,7 @@
 import { useState } from "react"
 import SendIcon from "../assets/Group 1.png"
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 export default function ContactForm() {
@@ -30,7 +32,7 @@ export default function ContactForm() {
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     console.log("Form submitted:", formData)
-    alert("Message sent successfully!")
+    toast.success("Message sent successfully!");
   }
 
   return (
@@ -112,6 +114,8 @@ export default function ContactForm() {
         </button>
 
       </form>
+
+      <ToastContainer position="bottom-right" autoClose={3000} />
 
     </div>
   )

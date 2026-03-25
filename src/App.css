@@ -201,3 +201,12 @@ body {
   width: 420px;
   height: 100%;
 }
+
+.Toastify__close-button {
+  width: auto !important;
+  height: auto !important;
+  min-width: unset !important;
+  padding: 0 !important;
+  background: transparent !important;
+  color: inherit !important;
+}
